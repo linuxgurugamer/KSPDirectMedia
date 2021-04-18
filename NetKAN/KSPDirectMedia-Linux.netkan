@@ -1,0 +1,28 @@
+{
+    "spec_version": 1,
+    "identifier":       "KSPDirectMedia-Linux",
+    "name":             "KSPDirectMedia (Linux)",
+    "abstract":         "System DLLs needed for access to joysticks",
+    "author":           "linuxgurugamer",
+    "license":          "MIT",
+    "$kref":            "#/ckan/github/linuxgurugamer/KSPDirectMedia",
+    "$vref":            "#/ckan/ksp-avc",
+    "release_status":   "stable",
+    "tags": [
+        "plugin"
+    ],
+    "provides": [
+        "KSPDirectMedia"
+    ],
+    "conflicts": [
+        {
+            "name": "KSPDirectMedia"
+        }
+    ],
+    "install": [
+        {
+            "file": "LinuxSupportFiles/GameData/KSPDirectMedia",
+            "install_to": "GameData"
+        }
+    ]
+}

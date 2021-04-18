@@ -8,3 +8,9 @@ Linux
     XInputDotNetPure.dll
     
 As well as the associated licenses for both
+
+
+Mods which use this are:
+
+	Advanced Fly By Wire
+	GPWS

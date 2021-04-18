@@ -1,0 +1,39 @@
+{
+    "spec_version": 1,
+    "identifier":       "KSPDirectMedia-Windows",
+    "name":             "KSPDirectMedia (Windows)",
+    "abstract":         "System DLLs needed for access to joysticks",
+    "author":           "linuxgurugamer",
+    "license":          "MIT",
+    "$kref":            "#/ckan/github/linuxgurugamer/KSPDirectMedia",
+    "$vref":            "#/ckan/ksp-avc",
+    "release_status":   "stable",
+    "tags": [
+        "plugin"
+    ],
+    "install": [ 
+        {
+            "file":       "WindowsSupportFiles/SDL2.dll",
+            "install_to": "GameRoot"
+        }, {
+            "file":       "WindowsSupportFiles/SDL_LICENSE",
+            "install_to": "GameRoot"
+        }, {
+            "file":       "WindowsSupportFiles/XINPUTDOTNET_LICENSE",
+            "install_to": "GameRoot"
+        }, {
+            "file":       "WindowsSupportFiles/XInputInterface.dll",
+            "install_to": "GameRoot"
+        },
+        {
+            "file": "WindowsSupportFiles/GameData/KSPDirectMedia",
+            "install_to": "GameData"
+        }
+    ],
+    "provides": [
+        "KSPDirectMedia"
+    ],
+    "conflicts": [
+        { "name": "KSPDirectMedia" }
+    ]
+}

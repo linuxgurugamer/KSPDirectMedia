@@ -1,0 +1,37 @@
+{
+    "spec_version": 1,
+    "identifier":   "AdvancedFlyByWire",
+    "name":         "Advanced Fly-By-Wire (Windows)",
+    "$kref":        "#/ckan/spacedock/1869",
+    "$vref":        "#/ckan/ksp-avc",
+    "license":      "MIT",
+    "release_status": "stable",
+    "resources": {
+        "homepage":   "https://forum.kerbalspaceprogram.com/index.php?/topic/175359-*",
+        "repository": "https://github.com/linuxgurugamer/ksp-advanced-flybywire"
+    },
+    "tags": [
+        "plugin",
+        "control"
+    ],
+    "install": [ 
+    {
+        "file":             "GameData/ksp-advanced-flybywire",
+        "install_to":       "GameData",
+        "filter_regexp": [ "XInputDotNetPure.dll" ]
+    } ],
+    "provides": [
+        "AdvancedFlyByWireRevived"
+    ],
+    "conflicts": [
+        { "name": "AdvancedFlyByWireRevived" }
+    ],
+    "depends": [
+        { "name": "ToolbarController"   },
+        { "name": "ClickThroughBlocker" },
+        { "name": "KSPDirectMedia" }
+    ],
+    "recommends": [
+        { "name": "KSP-AVC" }
+    ]
+}
